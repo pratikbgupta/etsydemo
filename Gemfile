@@ -29,7 +29,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 # paperclip
 gem "paperclip", "~> 4.2"
+gem "paperclip-dropbox", ">= 1.1.7"
 
+# to protect sensitive information written in config files
+gem "figaro"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
