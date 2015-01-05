@@ -45,6 +45,9 @@ gem "figaro"
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Use to add users on website
+gem 'devise'
+
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
