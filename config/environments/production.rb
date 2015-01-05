@@ -77,5 +77,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Add users using gem file. Change localhost URL to production
-  config.action_mailer.default_url_options = { host: 'localhost', port: 300 }
+  config.action_mailer.default_url_options = { host: 'https://etsydemo-12312014.herokuapp.com/', port: 300 }
 end
