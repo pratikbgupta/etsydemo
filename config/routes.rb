@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   get 'pages/contact'
 
+# to make lisitings as home page
 root 'listings#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
