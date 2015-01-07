@@ -2,12 +2,15 @@ Rails.application.routes.draw do
   devise_for :users
   resources :listings
 
+# Use to indicate all avialable URLs created by the developer.
   get 'pages/about'
-
   get 'pages/contact'
 
 # to make lisitings as home page
-root 'listings#index'
+  root 'listings#index'
+
+# to manage listings by a user
+  get 'seller' => "listings#seller"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
