@@ -14,4 +14,5 @@ class Listing < ActiveRecord::Base
 
 	#Association of listings to a user. 1 user to each listing
 	belongs_to :user
+	has_many :orders
 end

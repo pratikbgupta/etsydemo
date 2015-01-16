@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+
   devise_for :users
-  resources :listings
+  resources :listings do
+    resources :orders
+  end
 
 # Use to indicate all avialable URLs created by the developer.
   get 'pages/about'
