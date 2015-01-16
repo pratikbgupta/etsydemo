@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :listings do
-    resources :orders
+    resources :orders, only: [:new, :create]
   end
 
 # Use to indicate all avialable URLs created by the developer.
@@ -14,6 +14,10 @@ Rails.application.routes.draw do
 
 # to manage listings by a user
   get 'seller' => "listings#seller"
+
+#to manage sales and purchases of a user
+  get 'sales' => "orders#sales"
+  get 'purchases' => "orders#purchases"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
