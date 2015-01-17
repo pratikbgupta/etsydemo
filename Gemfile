@@ -1,3 +1,4 @@
+source 'https://code.stripe.com'
 source 'https://rubygems.org'
 
 ruby '2.1.5'
@@ -33,6 +34,9 @@ gem "paperclip-dropbox", ">= 1.1.7"
 
 # to protect sensitive information written in config files
 gem "figaro"
+
+# to enable payment option
+gem 'stripe'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
